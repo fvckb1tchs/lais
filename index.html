@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>laís tem olhos lindos</title>
+  <title>Laís tem olhos lindos</title>
   <style>
     body {
       margin: 0;
@@ -44,42 +44,42 @@
     }
 
     .quote, .message, .surprise, .button-container {
-      max-width: 700px;
+      max-width: 90%;
       opacity: 0;
       z-index: 1;
     }
 
     .quote {
-      font-size: 1.5em;
-      animation: fadeIn 3s forwards;
+      font-size: 1.3em;
+      animation: fadeIn 2.5s forwards;
     }
 
     .message {
-      margin-top: 40px;
-      font-size: 1.2em;
+      margin-top: 25px;
+      font-size: 1.1em;
       font-style: italic;
-      animation: fadeIn 3s forwards;
-      animation-delay: 4s;
+      animation: fadeIn 2.5s forwards;
+      animation-delay: 3s;
     }
 
     .surprise {
-      margin-top: 40px;
-      font-size: 1.3em;
-      color: #ffffff; /* mudado para branco */
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #ffffff;
       font-weight: bold;
-      animation: fadeIn 3s forwards;
-      animation-delay: 8s;
+      animation: fadeIn 2.5s forwards;
+      animation-delay: 5s;
     }
 
     .button-container {
-      margin-top: 50px;
-      animation: fadeIn 3s forwards;
-      animation-delay: 10s;
+      margin-top: 40px;
+      animation: fadeIn 2.5s forwards;
+      animation-delay: 7s;
     }
 
     .nose-button {
-      padding: 15px 30px;
-      font-size: 1.2em;
+      padding: 12px 25px;
+      font-size: 1em;
       font-weight: bold;
       border: none;
       border-radius: 10px;
@@ -90,11 +90,19 @@
     }
 
     .nose-button:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     @keyframes fadeIn {
       to { opacity: 1; }
+    }
+
+    /* ajustes para celular */
+    @media (max-width: 480px) {
+      .quote { font-size: 1.1em; }
+      .message { font-size: 1em; margin-top: 20px; }
+      .surprise { font-size: 1.1em; margin-top: 25px; }
+      .nose-button { padding: 10px 20px; font-size: 0.95em; }
     }
   </style>
 </head>
@@ -103,17 +111,17 @@
   <div class="cloud"></div>
   <div class="cloud"></div>
 
-  <div class="quote">“algumas noites parecem feitas para os que sonham acordados...”</div>
-  <div class="message">há nos teus olhos o mesmo brilho que guardam as noites brancas, mas cheios de silêncio.</div>
-  <div class="surprise">…mas surpresa! essa noite branca só existe porque você entrou aqui</div>
+  <div class="quote">“Noites feitas para sonhar...”</div>
+  <div class="message">Teus olhos brilham como noites brancas.</div>
+  <div class="surprise">…mas surpresa! Só existe porque você entrou </div>
 
   <div class="button-container">
-    <button class="nose-button" onclick="noseClick()">aperte com o nariz</button>
+    <button class="nose-button" onclick="noseClick()">Aperte com o nariz</button>
   </div>
 
   <script>
     function noseClick() {
-      alert("vc conseguiu! 👃✨ mascuidado para não derrubar o celular!");
+      alert("Você conseguiu! 👃✨ Mas cuidado para não derrubar o celular!");
     }
   </script>
 </body>
