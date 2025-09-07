@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noites Brancas</title>
+  <title>laís tem olhos lindos</title>
   <style>
     body {
       margin: 0;
@@ -43,7 +43,7 @@
       100% { transform: translate(-15%, -5%) scale(1.1); }
     }
 
-    .quote, .message, .surprise {
+    .quote, .message, .surprise, .button-container {
       max-width: 700px;
       opacity: 0;
       z-index: 1;
@@ -65,10 +65,32 @@
     .surprise {
       margin-top: 40px;
       font-size: 1.3em;
-      color: #ff4500;
+      color: #ffffff; /* mudado para branco */
       font-weight: bold;
       animation: fadeIn 3s forwards;
       animation-delay: 8s;
+    }
+
+    .button-container {
+      margin-top: 50px;
+      animation: fadeIn 3s forwards;
+      animation-delay: 10s;
+    }
+
+    .nose-button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #ff6f61;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .nose-button:hover {
+      transform: scale(1.1);
     }
 
     @keyframes fadeIn {
@@ -82,7 +104,17 @@
   <div class="cloud"></div>
 
   <div class="quote">“algumas noites parecem feitas para os que sonham acordados...”</div>
-  <div class="message">nos teus olhos o mesmo brilho que guardam as noites brancas, mas cheios de silêncio</div>
-  <div class="surprise">…mas surpresa! Esta noite branca só existe porque você entrou aqui </div>
+  <div class="message">há nos teus olhos o mesmo brilho que guardam as noites brancas, mas cheios de silêncio.</div>
+  <div class="surprise">…mas surpresa! essa noite branca só existe porque você entrou aqui</div>
+
+  <div class="button-container">
+    <button class="nose-button" onclick="noseClick()">aperte com o nariz</button>
+  </div>
+
+  <script>
+    function noseClick() {
+      alert("vc conseguiu! 👃✨ mascuidado para não derrubar o celular!");
+    }
+  </script>
 </body>
 </html>
